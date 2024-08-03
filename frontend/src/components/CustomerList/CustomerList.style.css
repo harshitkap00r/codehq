@@ -1,0 +1,44 @@
+.customerList {
+  flex: 3;
+  max-width: 500px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.customerList-wrapper {
+  border: 1px solid #ddd;
+}
+
+.customerList::-webkit-scrollbar {
+  display: none;
+}
+
+.customerList-item {
+  padding: 5%;
+  cursor: pointer;
+}
+
+.customerList-item[data-selected="true"] {
+  background-color: #eeeeee;
+}
+
+.customerList-divider {
+  height: 1px;
+  background-color: #ccc;
+}
+
+.customerList-itemName {
+  font-weight: 500;
+  margin-bottom: 3%;
+  font-size: 150%;
+  text-transform: capitalize;
+}
+
+.customerList-itemTitle {
+  color: #B6B6B6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
